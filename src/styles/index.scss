@@ -1,0 +1,314 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+ }
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  min-height: 100%
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.filter-container {
+  padding-bottom: 10px;
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+  .filter-item-date {
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+}
+
+
+.warn-content{
+  background: rgba(66,185,131,.1);
+  border-radius: 2px;
+  padding: 16px;
+  padding: 1rem;
+  line-height: 1.6rem;
+  word-spacing: .05rem;
+  .title{
+    color: #42b983;
+    font-weight: 600;
+  }
+}
+
+.sub-navbar {
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+  transition: 600ms ease position;
+  background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+  .subtitle {
+    font-size: 20px;
+    color: #fff;
+  }
+  &.draft {
+    background: #d0d0d0;
+  }
+  &.deleted {
+    background: #d0d0d0;
+  }
+  &.back {
+    background: #f8f8f8;
+  }
+
+}
+
+.block{
+  display: block;
+}
+.demonstration{
+  line-height:38px;
+}
+.slider{
+  width: 220px;
+  float: right
+}
+
+.tool-staff-marker {
+  background-color: red;
+  width: auto;
+  min-width:80px;
+  color: #fff;
+  padding: 1px 5px;
+  text-align: center;
+  position: relative;
+  border-radius: 20px;
+  font-size: 12px;
+  transform: translate(-20px)
+}
+
+.tool-staff-marker-name {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden
+}
+
+.tool-staff-marker-corner {
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -70%;
+  transform: translate(-50%);
+  border: 10px solid red;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  z-index: 10;
+}
+
+/* 空闲 司机 点样式*/
+.driver-marker-status-10 {
+  background: #70c646;
+}
+.driver-marker-status-10 .tool-staff-marker-corner {
+  border-top-color: #70c646;
+}
+.font-status-10 {
+  color: #70c646;
+}
+
+/* 已派单 司机 点样式*/
+.driver-marker-status-20 {
+  background: #EEC900;
+}
+.driver-marker-status-20 .tool-staff-marker-corner {
+  border-top-color: #EEC900;
+}
+.font-status-20 {
+  color: #EEC900;
+}
+
+/* 接单 司机 点样式*/
+.driver-marker-status-30 {
+  background: #000000;
+}
+.driver-marker-status-30 .tool-staff-marker-corner {
+  border-top-color: #000000;
+}
+.font-status-30 {
+  color: #000000;
+}
+/* 前往预约地 司机 点样式*/
+.driver-marker-status-33 {
+  background: #0066FF;
+}
+.driver-marker-status-33 .tool-staff-marker-corner {
+  border-top-color: #0066FF;
+}
+.font-status-33 {
+  color: #0066FF;
+}
+/* 到达预约地 司机 点样式*/
+.driver-marker-status-35 {
+  background: #0066AA;
+}
+.driver-marker-status-35 .tool-staff-marker-corner {
+  border-top-color: #0066AA;
+}
+.font-status-35 {
+  color: #0066AA;
+}
+/* 中途等待 司机 点样式*/
+.driver-marker-status-38 {
+  background: #FF00FF;
+}
+.driver-marker-status-38 .tool-staff-marker-corner {
+  border-top-color: #FF00FF;
+}
+.font-status-38 {
+  color: #FF00FF;
+}
+/* 前往目的地 司机 点样式*/
+.driver-marker-status-40 {
+  background: #FF0000;
+}
+.driver-marker-status-40 .tool-staff-marker-corner {
+  border-top-color: #FF0000;
+}
+.font-status-40 {
+  color: #FF0000;
+}
+/* 结算中 司机 点样式*/
+.driver-marker-status-50 {
+  background: #f1440c;
+}
+.driver-marker-status-50 .tool-staff-marker-corner {
+  border-top-color: #f1440c;
+}
+.font-status-50 {
+  color: #f1440c;
+}
+/* 离线 司机 点样式*/
+.driver-marker-status-99 {
+  background: #909399;
+}
+.driver-marker-status-99 .tool-staff-marker-corner {
+  border-top-color: #909399;
+}
+.font-status-99 {
+  color: #909399;
+}
+.order-status-0{
+   background-color: #3EB3F5;
+   color: white;
+ }
+.order-status-20{
+  background-color: #EEC900;
+  color: white;
+}
+.order-status-30{
+  background-color: #000000;
+  color: white;
+}
+.order-status-33{
+  background-color: #0066FF;
+  color: white;
+}
+.order-status-35{
+  background-color: #0066AA;
+  color: white;
+}
+.order-status-38 {
+  background-color: #FF00FF;
+  color: white;
+}
+.order-status-40 {
+  background-color: #FF0000;
+  color: white;
+}
+.order-status-50 {
+  background-color: #f1440c;
+  color: white;
+}
+.order-status-60 {
+  background-color: #47A447;
+  color: white;
+}
+.order-status-99 {
+  background-color: #909399;
+  color: white;
+}
+.separator{
+  .el-range-separator{ width: 30px;}
+}
+
+

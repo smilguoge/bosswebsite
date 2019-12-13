@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{display:none;}
+	.st2{display:inline;fill:none;}
+	.st3{fill:#1296DB;}
+	.st4{opacity:0.5;enable-background:new    ;}
+	.st5{fill:#1296DB;stroke:#1296DB;stroke-width:4;stroke-miterlimit:10;}
+	.st6{font-family:'AdobeSongStd-Light-GBpc-EUC-H';}
+	.st7{font-size:200px;}
+</style>
+<g>
+	<title>background</title>
+	<rect id="canvas_background" x="-1" y="-1" class="st0" width="402" height="402"/>
+	<g id="canvasGrid" class="st1">
+		<rect class="st2" width="400" height="400"/>
+	</g>
+</g>
+<g>
+	<title>Layer 1</title>
+	<path id="svg_4" d="M7.7,8.8h2v1.5h-2V8.8z"/>
+	<g id="svg_11">
+		<path id="svg_16" class="st3" d="M201,2C91.6,2,3,90.6,3,200s88.6,198,198,198s198-88.6,198-198S310.4,2,201,2L201,2z M201,357.1
+			c-86.7,0-157.1-70.5-157.1-157.1c0-86.6,70.5-157.1,157.1-157.1S358.1,113.3,358.1,200S287.6,357.1,201,357.1z"/>
+		<path id="svg_17" class="st4" d="M203,202.1"/>
+	</g>
+	<text id="svg_21" transform="matrix(1 0 0 1 100 272)" class="st5 st6 st7">荐</text>
+</g>
+</svg>

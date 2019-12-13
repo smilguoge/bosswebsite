@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>代驾3.0管理端</title>
+    <script src=<%= BASE_URL %>/qnviccub/qnviccub.js?5></script>
+    <script src=<%= BASE_URL %>/qnviccub/qnvfunc.js?5></script>
+  </head>
+  <body onLoad="TV_Initialize()">
+
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body >
+  <script src="//webapi.amap.com/maps?v=1.4.4&key=b6f6175fda66c5c2a1bda1fc73d08e7e"></script>
+
+  <script language="javascript" for="qnviccub" event="OnQnvEvent(chID,type,handle,result,param,szdata,szdataex)">
+    //电话猫的待测试
+    T_GetEvent(chID,type,handle,result,szdata);
+  </script>
+  <script>
+    function AppendStatus(szStatus)
+    {
+      console.log(szStatus);
+    }
+    function  T_GetEvent(uID,uEventType,uHandle,uResult,szdata)
+    {
+      //var vValueArray=qnviccub.QNV_Event(0,2,0,"","",1024);
+      //var vValue=" type="+uEventType+" Handle="+uHandle+" Result="+uResult+" szdata="+szdata;
+      switch(uEventType)
+      {
+        case BriEvent_GetCallID://得到来电号码
+          // console.log(szdata);//获取电话号码 下面就是弹框了
+          window.open('/#/order/create?mobile='+szdata,'_blank');
+          break;
+      }
+
+    }
+</script>
+  <object classid="clsid:F44CFA19-6B43-45EE-90A3-29AA08000510" id="qnviccub" data="DATA:application/x-oleobject;BASE64,GfpM9ENr7kWQoymqCAAFEAADAAD7FAAADhEAAA==
+" width="33" height="33"></object>
+</html>

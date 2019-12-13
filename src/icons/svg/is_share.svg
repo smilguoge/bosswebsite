@@ -1,0 +1,26 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="402" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <defs>
+   <style type="text/css"/>
+  </defs>
+  <path id="svg_4" p-id="31279" d="m7.703992,8.843315l1.953125,0l0,1.464844l-1.953125,0l0,-1.464844z"/>
+  <defs>
+   <style type="text/css"/>
+  </defs>
+  <g stroke="null" id="svg_11">
+   <path stroke="null" id="svg_16" d="m201.000012,2.000015c-109.35359,0 -197.99989,88.64634 -197.99989,197.99999c0,109.35365 88.6463,198 197.99989,198c109.35358,0 197.99988,-88.64635 197.99988,-198c0,-109.35365 -88.6463,-197.99999 -197.99988,-197.99999zm0,355.11668c-86.65731,0 -157.13023,-70.48658 -157.13023,-157.11669c0,-86.64373 70.47292,-157.13031 157.13023,-157.13031c86.6573,0 157.11659,70.47296 157.11659,157.13031c0,86.65736 -70.48654,157.11669 -157.11659,157.11669z" stroke-opacity="null" stroke-width="NaN" fill="#1296db"/>
+   <path id="svg_17" d="m202.974952,202.067685" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="NaN" stroke="null" fill="#000000"/>
+  </g>
+  <text font-weight="bold" stroke="null" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="200" id="svg_21" y="272" x="100" stroke-opacity="null" stroke-width="0" fill="#1296db">外</text>
+ </g>
+</svg>

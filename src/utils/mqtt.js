@@ -1,0 +1,5 @@
+// export const MQTT_SERVICE = 'ws://127.0.0.1:9001/mqtt'
+// export const MQTT_SERVICE = 'ws://222.73.204.54:9001/mqtt'
+// export const MQTT_SERVICE = 'ws://101.132.122.252:9109/mqtt'
+export const MQTT_USERNAME = 'hsf'
+export const MQTT_PASSWORD = 'hsf888'
