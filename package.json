@@ -24,7 +24,7 @@
     "mqtt": "^3.0.0",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
-    "vue": "2.5.17",
+    "vue": "3.0.0",
     "vue-amap": "^0.5.9",
     "vue-clipboard2": "^0.2.1",
     "vue-count-to": "1.0.13",
